@@ -1,4 +1,4 @@
-# Simple Optimism Node
+# Run a OP Stack Node
 
 A simple docker compose script for launching full / archive node for OP Stack chains.
 
@@ -7,7 +7,7 @@ A simple docker compose script for launching full / archive node for OP Stack ch
 
 ## Recommended Hardware
 
-### OP and Base Mainnet
+### Mainnet
 
 - 16GB+ RAM
 - 2 TB SSD (NVME Recommended)
@@ -67,8 +67,8 @@ It should returns an empty container list without having any error. Otherwise, r
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/smartcontracts/simple-optimism-node.git
-cd simple-optimism-node
+git clone https://github.com/superseed-xyz/node.git
+cd node
 ```
 
 ### Copy .env.example to .env
@@ -88,6 +88,8 @@ Open `.env` with your editor of choice
     * `op-sepolia` - Optimism Sepolia (Testnet)
     * `base-mainnet` - Base Mainnet
     * `base-sepolia` - Base Sepolia (Testnet)
+    * `superseed-mainnet` - Superseed Mainnet
+    * `superseed-sepolia` - Superseed Sepolia (Testnet)
 * **NODE_TYPE** - Choose the type of node you want to run:
     * `full` (Full node) - A Full node contains a few recent blocks without historical states.
     * `archive` (Archive node) - An Archive node stores the complete history of the blockchain, including historical states.
@@ -103,6 +105,8 @@ Open `.env` with your editor of choice
     * **Optimism Sepolia** - https://sepolia.optimism.io
     * **Base Mainnet** - https://mainnet.base.org
     * **Base Sepolia** - https://sepolia.base.org
+    * **Superseed Mainnet** - https://rpc-superseed-mainnet-0.t.conduit.xyz/
+    * **Superseed Sepolia** - https://sepolia.superseed.xyz/
 
 ### OP Mainnet only configurations
 
